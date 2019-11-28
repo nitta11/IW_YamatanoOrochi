@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LaserPointer : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class LaserPointer : MonoBehaviour
     [SerializeField]
     private LineRenderer _LaserPointerRenderer;
 
+    GameObject StartButton;
+    GameObject FinishButton;
+
     private Transform Pointer
     {
         get
@@ -36,6 +40,12 @@ public class LaserPointer : MonoBehaviour
             // どちらも取れなければ目の間からビームが出る
             return _CenterEyeAnchor;
         }
+    }
+
+    void Start()
+    {
+        StartButton = GameObject.Find("StartButton");
+        FinishButton = GameObject.Find("FinishButton");
     }
 
     void Update()
@@ -62,6 +72,39 @@ public class LaserPointer : MonoBehaviour
             // Rayがヒットしなかったら向いている方向にMaxDistance伸ばす
             _LaserPointerRenderer.SetPosition(1, pointerRay.origin + pointerRay.direction * _MaxDistance);
         }
-    }
 
+        if (Physics.Raycast(pointerRay, out hitInfo))
+        {
+            //Rayが当たったオブジェクトのtagがPlayerだったら
+            if (hitInfo.collider.name == "StartButton")
+            {
+                StartButton.GetComponent<TransformButton>().ChosenButton();
+
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+                {
+                    SceneManager.LoadScene("Story1");
+                }
+
+            }
+            else
+            {
+                StartButton.GetComponent<TransformButton>().ExitChosenButton();
+            }
+
+            if (hitInfo.collider.name == "FinishButton")
+            {
+                FinishButton.GetComponent<TransformButton>().ChosenButton();
+
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+                {
+                    SceneManager.LoadScene("Story2");
+                }
+            }
+            else
+            {
+                FinishButton.GetComponent<TransformButton>().ExitChosenButton();
+            }
+                
+        }
+    }
 }
