@@ -16,7 +16,7 @@ public class LoadSecen : MonoBehaviour
     {
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
         {
-            SceneManager.LoadScene("TitleScene");
+            SceneManager.LoadScene("Battle");
         }
     }
 }
