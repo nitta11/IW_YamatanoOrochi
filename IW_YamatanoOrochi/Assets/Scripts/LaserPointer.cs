@@ -82,7 +82,7 @@ public class LaserPointer : MonoBehaviour
 
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
                 {
-                    SceneManager.LoadScene("Story1");
+                    SceneManager.LoadScene("Story");
                 }
 
             }
@@ -97,7 +97,7 @@ public class LaserPointer : MonoBehaviour
 
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
                 {
-                    SceneManager.LoadScene("Story2");
+                    Application.Quit();
                 }
             }
             else
