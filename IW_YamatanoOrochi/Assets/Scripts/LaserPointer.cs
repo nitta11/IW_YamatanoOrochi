@@ -22,6 +22,7 @@ public class LaserPointer : MonoBehaviour
 
     GameObject StartButton;
     GameObject FinishButton;
+    GameObject FadeOutPanel;
 
     private Transform Pointer
     {
@@ -46,6 +47,7 @@ public class LaserPointer : MonoBehaviour
     {
         StartButton = GameObject.Find("StartButton");
         FinishButton = GameObject.Find("FinishButton");
+        FadeOutPanel = GameObject.Find("FadeOut"); 
     }
 
     void Update()
@@ -82,7 +84,7 @@ public class LaserPointer : MonoBehaviour
 
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
                 {
-                    SceneManager.LoadScene("Story");
+                    FadeOutPanel.GetComponent<TransformImage>().StartFadeOut();
                 }
 
             }
