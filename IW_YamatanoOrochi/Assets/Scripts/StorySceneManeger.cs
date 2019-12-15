@@ -21,11 +21,11 @@ public class StorySceneManeger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (alfa > 0)
+      /*  if (alfa > 0)
         {
             GetComponent<Image>().color = new Color(red, green, blue, alfa);
             alfa -= speed;
-
         }
+        */
     }
 }

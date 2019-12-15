@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: 99ec01ea42b4640d191d191ef58e0046
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      74: -8132252517155333899
+    second: Armature_head|appear01
+  - first:
+      74: 512316334937429522
+    second: Armature_head|appear02
+  - first:
+      74: 2739124281710247953
+    second: Armature_head|appear03
+  - first:
+      74: 370531173694338731
+    second: Armature_head|appear04
+  - first:
+      74: -7843376018862376323
+    second: Armature_head|appear05
+  - first:
+      74: -2366408643697783971
+    second: Armature_head|appear06
+  - first:
+      74: -453551793899747137
+    second: Armature_head|appear07
+  - first:
+      74: -5803397089066544324
+    second: Armature_head|appear08
+  - first:
+      74: 2153692282324732134
+    second: Armature_head|attack1
+  - first:
+      74: -8429575665217593994
+    second: Armature_head|attack2
+  - first:
+      74: -1113182256946993432
+    second: Armature_head|attack3
+  - first:
+      74: 7564787868719095579
+    second: Armature_head|attack4
+  - first:
+      74: -2167765969196634636
+    second: Armature_head|attack5
+  - first:
+      74: -1105786366857119546
+    second: Armature_head|base_attack
+  - first:
+      74: 8264440548224210076
+    second: Armature_head|damage
+  - first:
+      74: 3069716034545673231
+    second: Armature_head|dead
+  - first:
+      74: -8751151365569552377
+    second: Armature_head|waiting01
+  - first:
+      74: -1345201920497888105
+    second: Armature_head|waiting02
+  - first:
+      74: 4014184979420931719
+    second: Armature_head|waiting03
+  - first:
+      74: 6808543515472558966
+    second: Armature_head|waiting04
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

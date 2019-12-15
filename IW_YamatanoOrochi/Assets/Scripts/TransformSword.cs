@@ -54,7 +54,7 @@ public class TransformSword : MonoBehaviour
             float roll = rotation.z;//ロール
             float yaw = rotation.y;//ヨー
 
-            rotation.x -= 0.33f;
+            rotation.x -= 0.16f;
 
             this.gameObject.transform.rotation = rotation;
         }

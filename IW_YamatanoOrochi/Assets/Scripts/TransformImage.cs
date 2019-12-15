@@ -21,13 +21,13 @@ public class TransformImage : MonoBehaviour
 
     public void StartFadeOut()
 	{
-        FadeOutTime = true;
-	}
+        SceneManager.LoadScene("Story");
+    }
 
 
     void Update()
     {
-        if (FadeOutTime == true && alfa<1)
+       /* if (FadeOutTime == true && alfa<1)
         {
             GetComponent<Image>().color = new Color(red, green, blue, alfa);
             alfa += speed;
@@ -37,6 +37,7 @@ public class TransformImage : MonoBehaviour
         {
             SceneManager.LoadScene("Story");
         }
+        */
         
     }
 }
